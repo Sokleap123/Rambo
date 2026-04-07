@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Home Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating { animation: float 6s ease-in-out infinite; }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-tr  bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                       Infotmation Technology Is <span class="gradient-text bg-gradient-to-r from-pink-500 to-yellow-500 ">Learned Together</span>
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 max-w-lg">
+                       Access 500+ indutry-recognized certification and course <br>in cloud, security, AI, and data. Learn at your own pace <br>and get hired faster.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-8 py-4 rounded-xl font-bold hover:from-pink-600 hover:to-yellow-600 transition-all transform hover:scale-105 shadow-lg">
+                           Explore Courses -->
+                        </button>
+                        <button class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-xl font-bold hover:bg-opacity-30 transition-all border border-white border-opacity-30">
+                           Start For Free
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-pink-500 rounded-full filter blur-3xl opacity-30"></div>
+                        <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl opacity-30"></div>
+                          <!-- Toggle -->
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input id="theme-toggle" type="checkbox" class="sr-only">
+      <div class="toggle-track w-14 h-[46px] rounded-full">
+        <div class="toggle-btn flex items-center justify-center text-white text-sm font-bold">
+          
+        </div>
+      </div>
+    </label>
+
+                        <img src=".//img/3d_cartoon_in_chill_using_laptop_in_sitting_in_sofa-removebg-preview.png" 
+                             alt="Hero Image" 
+                             class="relative z-10 w-full floating ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold tracking-wider uppercase text-blue-600">Features</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Everything You Need to Succeed</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+                    Our platform is packed with powerful features designed to help you build, grow, and scale your business.
+                </p>
+            </div>
+              <div class="flex flex-wrap justify-center gap-10">
+      <!-- Card 1 -->
+      <div class=" bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700 shadow-md rounded-xl overflow-hidden max-w-sm flex flex-col hover:-translate-y-2 transition-all duration-300">
+        <img src="https://magai.co/wp-content/uploads/2025/01/magai-featured-photo-genai-vs-machine-learning-scaled.jpg" alt="Card Image 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">Ai & Machine learning</h2>
+          <p class="text-white mt-2">Learn how machines think and learn <br>from data.</p>
+          <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="  bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700 shadow-md rounded-xl overflow-hidden max-w-sm flex flex-col hover:-translate-y-2 transition-all duration-300">
+        <img src="https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg" alt="Card Image 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">Data Science</h2>
+          <p class="text-white mt-2">Analyze data and discover insight.</p>
+           <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class=" bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700 shadow-md rounded-xl overflow-hidden max-w-sm flex flex-col hover:-translate-y-2 transition-all duration-300">
+        <img src="https://www.rishabhsoft.com/wp-content/uploads/2022/02/Banner-Image-Cloud-Computing-in-Digital-Transformation.jpg" alt="Card Image 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">Cloud Computing</h2>
+          <p class="text-white mt-2">Work AWS, Azure, and <br> Google Cloud.</p>
+          <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+        </div>
+      </div>
+
+         
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20  bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700 ">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1 -->
+                <div class="p-6">
+                    <div class="text-5xl font-bold mb-2">10K+</div>
+                    <div class="text-white font-medium">Happy Customers</div>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="p-6">
+                    <div class="text-5xl font-bold mb-2">99.9%</div>
+                    <div class="text-white font-medium">Uptime</div>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="p-6">
+                    <div class="text-5xl font-bold mb-2">5M+</div>
+                    <div class="text-white font-medium">Daily Requests</div>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="p-6">
+                    <div class="text-5xl font-bold mb-2">24/7</div>
+                    <div class="text-white font-medium">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold tracking-wider uppercase text-blue-600">Testimonials</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Students Say</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500 transform hover:scale-105 transition-all">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/474x/1e/a4/54/1ea4549165a2adf5d5d6726f0a003a74.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">James</h4>
+                            <p class="text-blue-600">Cloud Engineer-Cambodia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Passed my AWS Solutions Architect exam on the first try! The <br>practice tests were spot on. Highly recommended."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500 transform hover:scale-105 transition-all">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/736x/9f/9d/ed/9f9ded3b0dd6794036eff48c79e6e040.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Narith</h4>
+                            <p class="text-purple-600">Security Analyzst-Cambodia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The CEH course gave me real-world skills I needed to land my first <br>cybersecurity role. Worth every penny."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500 transform hover:scale-105 transition-all">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/1200x/f1/cb/34/f1cb342ea66f5a6d6a6e1eb9cb1927dd.jpg" alt="Emma Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Vannda</h4>
+                            <p class="text-pink-600">Data Analyst - Cambodia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Google Data Analytics course helped me switch into data science in <br>just 3 months. Very practical content."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20  bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Your Learning Journey Today</h2>
+            <p class="max-w-2xl mx-auto text-blue-100 mb-8 text-xl">
+                Join 48,000+ professionals advancing thier careers with TechCourse certifications.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                    Get Start Free - NO Credit Card
+                </button>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Integrations</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Webinars</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm">
+                        Subscribe to our newsletter for the latest updates
+                    </p>
+                    <div class="mt-3 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-white text-2xl font-bold flex items-center">
+                      TechCourse
+                    </a>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 TechCourse. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
